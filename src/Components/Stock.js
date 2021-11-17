@@ -13,7 +13,7 @@ const Stock = () => {
 
     return ( 
        <div className="stock-container">
-         {data.map(x=><Row symbol={x.symbol} priceChange={x.priceChange} priceChangePercent={x.priceChangePercent}/>)}
+         {data.map(x=><Row symbol={x.symbol} priceChange={x.priceChange} priceChangePercent={x.priceChangePercent} />)}
        </div>
      );
 }
