@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
+import Stock from './Stock';
 
 function Button () {
-    const [show, setShow] = React.useState(true);
+    const [show, setShow]=useState(true);
  
     return (
         <div>
             <h1>Stocks Page</h1>
+            <button onclick={() => setShow(true)}>Show API</button>
+            <button onClick={() => setShow(false)}>Hide API</button>
             {
                 show?<Stock/>:null
             }
-            <button>Show API</button>
-            <button>Hide API</button>
+            
         </div>
     )
 }
