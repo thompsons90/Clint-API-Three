@@ -6,8 +6,9 @@ function App() {
   return (
     <div className="App">
          <Button />
+         {/* <div className="contain-stocks">
         <Stock />
-       
+        </div> */}
     </div>
   );
 }

@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 
 function Button () {
-    state = {
-        divcontainer:false, 
-    }
+    const [show, setShow] = React.useState(true);
  
     return (
         <div>
             <h1>Stocks Page</h1>
-            <button>Fetch API</button>
+            {
+                show?<Stock/>:null
+            }
+            <button>Show API</button>
+            <button>Hide API</button>
         </div>
     )
 }
