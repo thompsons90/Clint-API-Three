@@ -10,7 +10,7 @@ const Stock = () => {
       .then(x => setData(x)); //x is an actual array, the second part of this line we need to use to set the state
     },[])
   //storing the info in a variable so that when I click show it doesn't do another call, updates on its own
-
+//be careful of the amount of use based on free, public, paid API
     return ( 
        <div className="stock-container">
          {data.map(x=><Row symbol={x.symbol} priceChange={x.priceChange} priceChangePercent={x.priceChangePercent} />)}
